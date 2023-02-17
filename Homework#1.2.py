@@ -1,7 +1,8 @@
 # EX2
-num = input("Введіть числа ")
-sorted_list = sorted(num)
-minValue = sorted_list[0]
-maxValue = sorted_list[-1]
-print("Найменше число", minValue)
-print("Найбільше число", maxValue)
+number = input("Введіть числа ")
+list=[]
+for num in number:
+    list.append(int(num))
+num=sorted(list)
+print("Найменше число", num[0])
+print("Найбільше число", num[-1])
